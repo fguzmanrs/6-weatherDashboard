@@ -25,14 +25,14 @@ $(document).ready(function () {
 
     // city list, local storage
     function displayCities(cityList) {
-        $('.city-list').empty();
+        $('.cityResults').empty();
         var list = localStorage.getItem("cityList");
         cityList = (JSON.parse(list));
         // string returned, js function to parse cityList
         if (list) {
             for (var i = 0; i < cityList.length; i++) {
                 var container = $("<div class=card></div>").text(cityList[i]);
-                $('.city-list').prepend(container);
+                $('.cityResults').prepend(container);
             }
         }
     }

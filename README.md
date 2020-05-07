@@ -1,6 +1,6 @@
 # Weather Dashboard
 
-This is a weather dashboard application with search functionality to find current weather conditions and the future weather outlook for multiple cities. 
+This is a weather dashboard application with search functionality that finds current weather conditions and the future weather outlook for multiple cities. 
 
 ## User Story
 
