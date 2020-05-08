@@ -87,9 +87,22 @@ $(document).ready(function () {
                 }
             });
 
-            // $.ajax({}) showForecast
+            // $.ajax({
+                // url: 
+                // type: "GET",
+                // success: function (data) {
+                    // var displayForecast = showForecast (data);
+                    // add page
+                // }
+            // });
 
-            //$.ajax({}) showUV
+            //$.ajax({
+                 // url: 
+                // type: "GET",
+                // success: function (data) {
+                    // var displayUV = showUV (data);
+                // }
+            //})
 
         } else {
             $('#error').html('Please insert a city:');
