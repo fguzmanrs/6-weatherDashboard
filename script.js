@@ -87,22 +87,23 @@ $(document).ready(function () {
                 }
             });
 
-            // $.ajax({
-                // url: 
-                // type: "GET",
-                // success: function (data) {
-                    // var displayForecast = showForecast (data);
-                    // add page
-                // }
-            // });
+            $.ajax({
+                // url: website + units + api key,
+                type: "GET",
+                success: function (data) {
+                    var displayForecast = showForecast (data);
+                    // add to page
+                }
+            });
 
-            //$.ajax({
-                 // url: 
-                // type: "GET",
-                // success: function (data) {
-                    // var displayUV = showUV (data);
-                // }
-            //})
+            $.ajax({
+                //  url: website + lat + lon + api key
+                type: "GET",
+                success: function (data) {
+                    var displayUV = showUV (data);
+                    console.log(displayUV, "displayUV")
+                }
+            });
 
         } else {
             $('#error').html('Please insert a city:');
